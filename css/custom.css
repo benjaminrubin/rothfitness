@@ -13,3 +13,17 @@
 .icon {
     width: 50px;
 }
+
+#avatar {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+  }
+
+  #avatar img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
