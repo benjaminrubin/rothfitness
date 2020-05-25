@@ -45,6 +45,6 @@
       width: 100%;
   }
   .video-container {
-      width: 100%;
+      max-width: 600px;
       position: relative;
   }
