@@ -11,7 +11,7 @@
 }
 
 .icon {
-    width: 50px;
+    width: 80px;
 }
 
 #avatar {
@@ -30,4 +30,9 @@
 
   #liked-button:hover {
       cursor: auto;
+  }
+   
+
+  .bg-light-gray {
+      background-color: rgb(184, 188, 192) !important; 
   }
