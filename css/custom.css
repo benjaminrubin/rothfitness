@@ -27,3 +27,7 @@
     height: auto;
     overflow: hidden;
   }
+
+  #liked-button:hover {
+      cursor: auto;
+  }

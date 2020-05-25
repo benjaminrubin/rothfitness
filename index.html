@@ -25,7 +25,7 @@
         </div>
     </header>
 
-    <section class="">
+    <section class="mb-5">
         <!-- Basic Text -->
         <div class="container mt-5 text-center ">
             <div id="avatar" class="mx-auto my-3 shadow">
@@ -34,7 +34,7 @@
                 </picture>
             </div>
 
-            <h2 class="text-light display-3 mb-3">צעד קטן ויצאנו לדרך!</h2>            
+            <h2 class="text-light mb-3">צעד קטן ויצאנו לדרך!</h2>
 
         </div>
 
@@ -45,98 +45,96 @@
                 <p class="lead font-weight-bold">✅ אימונים אישיים אחד על אחד</p>
                 <p class="lead font-weight-bold">✅ אימונים זוגיים</p>
             </div>
-
-            <class class="row">
-                <div class="card mb-4 shadow-sm text-center mx-auto">
-                    <div class="card-header">
-                        <h4 class="my-0 font-weight-normal">אהבת?</h4>
-                    </div>
-                    <div class="card-body">
-                        <p>
-                            תשאיר\י פרטים ונתאם אימון היכרות
-                        </p>
-
-                        <!-- Form -->
-                        <script type="text/javascript">var submitted = false;</script>
-                        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
-                            onload="if(submitted)  {}"></iframe>
-
-                        <form class="needs-validation mx-auto" novalidate name="contactform" id="contactform"
-                            enctype="text/plain"
-                            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSePoE7jJ5YDpMh3jZSKXUcZ0Lv846qV0DhsVUg01aslpEKmUA/formResponse?"
-                            target="hidden_iframe">
+        </div>
 
 
-                            <!-- Name Input -->
-                            <div class="form-row">
-                                <div class="col-md-12 form-group">
-                                    <input class="form-control" id="entry.2050503941" name="entry.2050503941"
-                                        placeholder="שם מלא" type="text" required>
-                                    <div class="invalid-feedback">
-                                        שם מלא נדרש
-                                    </div>
-                                </div>
-                            </div>
+        <div class="container">
+            <div class="text-center">
 
-                            <!-- Phone Number Input -->
-                            <div class="form-row">
-                                <div class="col-md-12 form-group">
-                                    <input class="form-control" id="entry.878764942" name="entry.878764942"
-                                        placeholder="מספר פלאפון" type="tel" required>
-                                    <div class="invalid-feedback">
-                                        מספר מלא נדרש
-                                    </div>
-                                </div>
-                            </div>
+                <label class="btn btn-lg btn-danger" id="liked-button">אהבת?</label>
+                
+                <p class="mt-1 text-light">
+                    תשאיר\י פרטים ונתאם אימון היכרות
+                </p>
+            </div>
+            <!-- Form -->
+            <script type="text/javascript">var submitted = false;</script>
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {}"></iframe>
 
-                            <!-- Email Input -->
-                            <div class="form-row">
-                                <div class="col-md-12 form-group">
-                                    <input class="form-control" id="entry.1030703572" name="entry.1030703572"
-                                        placeholder="דוא״ל" type="email" required>
-                                    <div class="invalid-feedback">
-                                       דוא״ל נדרש
-                                    </div>
-                                </div>
-                            </div>
+            <form class="needs-validation mx-auto" novalidate name="contactform" id="contactform" enctype="text/plain"
+                action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSePoE7jJ5YDpMh3jZSKXUcZ0Lv846qV0DhsVUg01aslpEKmUA/formResponse?"
+                target="hidden_iframe">
 
 
-
-
-                            <!-- Submit Button -->
-                            <div class="row">
-                                <div class="col-md-12 form-group mb-0 text-center">
-                                    <button class="btn btn-primary shadow" type="submit" id="submit-button">שלח
-                                        </button>
-                                </div>
-                            </div>
-                        </form>
-
-                        <!-- Form Messages -->
-                        <div>
-                            <!-- Success Message -->
-                            <div class="text-center text-success mt-1" style="display: none;" id="form-message">
-                                נשלח!
-                            </div>
+                <!-- Name Input -->
+                <div class="form-row">
+                    <div class="col-md-12 form-group">
+                        <input class="form-control" id="entry.2050503941" name="entry.2050503941" placeholder="שם מלא"
+                            type="text" required>
+                        <div class="invalid-feedback">
+                            שם מלא נדרש
                         </div>
-
-
-
                     </div>
                 </div>
 
+                <!-- Phone Number Input -->
+                <div class="form-row">
+                    <div class="col-md-12 form-group">
+                        <input class="form-control" id="entry.878764942" name="entry.878764942"
+                            placeholder="מספר פלאפון" type="tel" required>
+                        <div class="invalid-feedback">
+                            מספר מלא נדרש
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Email Input -->
+                <div class="form-row">
+                    <div class="col-md-12 form-group">
+                        <input class="form-control" id="entry.1030703572" name="entry.1030703572" placeholder="דוא״ל"
+                            type="email" required>
+                        <div class="invalid-feedback">
+                            דוא״ל נדרש
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <!-- Submit Button -->
+                <div class="row">
+                    <div class="col-md-12 form-group mb-0 text-center">
+                        <button class="btn btn-primary shadow" type="submit" id="submit-button">שלח
+                        </button>
+                    </div>
+                </div>
+            </form>
+
+            <!-- Form Messages -->
+            <div>
+                <!-- Success Message -->
+                <div class="text-center text-success mt-1" style="display: none;" id="form-message">
+                    נשלח!
+                </div>
+            </div>
         </div>
 
 
     </section>
      
 
+    <!-- End of Form Section -->
+
+
+
     <footer class="container">
-        
+
         <!-- Social Logos -->
         <div class="row d-flex">
             <div class="mx-auto">
-                <a href="https://www.facebook.com/Eldar-Roth-%D7%9E%D7%90%D7%9E%D7%9F-%D7%9B%D7%95%D7%A9%D7%A8-%D7%90%D7%99%D7%A9%D7%99-256737984974516/" target="_blank">
+                <a href="https://www.facebook.com/Eldar-Roth-%D7%9E%D7%90%D7%9E%D7%9F-%D7%9B%D7%95%D7%A9%D7%A8-%D7%90%D7%99%D7%A9%D7%99-256737984974516/"
+                    target="_blank">
                     <img src="img/facebook_icon.png" alt="Facebook icon" class="icon px-1">
                 </a>
                 <a href="https://www.instagram.com/eldaroth/" target="_blank">
@@ -147,7 +145,8 @@
 
         <div class="row mt-3">
             <p class="mx-auto text-light">
-                <a style="text-decoration: underline;" class="text-light" href="tel:052-526-9692">052-526-9692</a> • צפון ישן, תל אביב
+                <a style="text-decoration: underline;" class="text-light" href="tel:052-526-9692">052-526-9692</a> •
+                צפון ישן, תל אביב
             </p>
         </div>
 
