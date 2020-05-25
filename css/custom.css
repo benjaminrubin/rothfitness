@@ -36,3 +36,15 @@
   .bg-light-gray {
       background-color: rgb(184, 188, 192) !important; 
   }
+
+
+  /* Video related */
+
+  video {
+      position: relative;
+      width: 100%;
+  }
+  .video-container {
+      width: 100%;
+      position: relative;
+  }
