@@ -54,6 +54,13 @@
         .bg-light-gray {
             background-color: rgb(184, 188, 192) !important;
         }
+
+        .error-message {
+            width: 100%;
+            margin-top: .25rem;
+            font-size: 80%;
+            color: #dc3545;
+        }
     </style>
 
     <title>Eldar Roth Fitness</title>
@@ -142,20 +149,23 @@
 
             <!-- Form -->
             <script type="text/javascript">var submitted = false;</script>
-            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {}"></iframe>
+
+
 
             <form class="needs-validation mx-auto" novalidate name="contactform" id="contactform" enctype="text/plain"
-                action="https://docs.google.com/forms/d/1wHizBS3UkXIW1Tl3VXjq4tybWbZ4y-1tNLBABAbp5Xs/formResponse?"
-                target="hidden_iframe">
+                action="https://docs.google.com/forms/d/1wHizBS3UkXIW1Tl3VXjq4tybWbZ4y-1tNLBABAbp5Xs/formResponse?">
 
 
                 <!-- Name Input -->
                 <div class="form-row">
                     <div class="col-md-12 form-group">
-                        <input class="form-control" id="entry.2050503941" name="entry.2050503941" placeholder="שם מלא"
+                        <input class="form-control" id="entry.2050503941" name="entry.2050503941" placeholder="*שם מלא"
                             type="text" required>
                         <div class="invalid-feedback">
                             שם מלא נדרש
+                        </div>
+                        <div class="error-message">
+
                         </div>
                     </div>
                 </div>
@@ -164,9 +174,12 @@
                 <div class="form-row">
                     <div class="col-md-12 form-group">
                         <input class="form-control" id="entry.878764942" name="entry.878764942"
-                            placeholder="מספר פלאפון" type="tel" required>
+                            placeholder="*מספר פלאפון" type="tel" required>
                         <div class="invalid-feedback">
                             מספר מלא נדרש
+                        </div>
+                        <div class="error-message">
+
                         </div>
                     </div>
                 </div>
@@ -174,10 +187,13 @@
                 <!-- Email Input -->
                 <div class="form-row">
                     <div class="col-md-12 form-group">
-                        <input class="form-control" id="entry.1030703572" name="entry.1030703572" placeholder="דוא״ל"
+                        <input class="form-control" id="entry.1030703572" name="entry.1030703572" placeholder="*דוא״ל"
                             type="email" required>
                         <div class="invalid-feedback">
                             דוא״ל נדרש
+                        </div>
+                        <div class="error-message">
+
                         </div>
                     </div>
                 </div>
@@ -186,7 +202,7 @@
 
                 <!-- Multiple Choice Questions -->
                 <div class="text-light text-right my-1 mb-3">
-                    <label>בחר/י אחד:</label>
+                    <label>*בחר/י אחד:</label>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="entry.584848696" id="exampleRadios1"
                             value="נשים בהריון ולאחר לידה" required>
@@ -214,9 +230,10 @@
                         <label class="form-check-label pr-4" for="entry.584848696">
                             פונקציונאלי
                         </label>
+
                     </div>
-                    <div class="invalid-feedback">
-                        דוא״ל נדרש
+                    <div id="multiple-error-message" class="error-message">
+
                     </div>
                 </div>
 
@@ -294,6 +311,16 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <!-- <script>
+        $('#contactform').on('submit', function (e) {
+            $('#contactform *').fadeOut(2000);
+            $('#form-message').fadeIn(2000);
+            // $('#gform').prepend('Your submission has been processed...');
+        });
+    </script> -->
+
+
+
 
     <!-- Custom Javascript -->
     <script src="js/form-validation.js"></script>
